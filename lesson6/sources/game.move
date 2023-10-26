@@ -54,8 +54,5 @@ module lesson6::hero_game {
 
     // Tấn công, hoàn thiện function để hero và monter đánh nhau
     // gợi ý: kiểm tra số điểm hp và strength của hero và monter, lấy hp trừ đi số sức mạnh mỗi lần tấn công. HP của ai về 0 trước người đó thua
-    public entry fun attack_monter() {
-
-    }
-
+    public entry fun attack_monter() {}
 }
