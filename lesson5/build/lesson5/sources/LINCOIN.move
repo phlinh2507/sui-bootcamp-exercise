@@ -18,8 +18,7 @@ module lesson5::LINCOIN {
     }
 
     // hoàn thiện function để có thể tạo ra 10_000 token cho mỗi lần mint, và mỗi owner của token mới có quyền mint
-    public entry fun mint(_:&CoinMetadata<LINCOIN>,treasury: &mut coin::TreasuryCap<LINCOIN>,recipient: address, ctx: &mut TxContext) {
-        let amount = 10_000;
+    public entry fun mint(_:&CoinMetadata<LINCOIN>,treasury: &mut coin::TreasuryCap<LINCOIN>, amount: u64, recipient: address, ctx: &mut TxContext) {
         coin::mint_and_transfer(treasury, amount, recipient, ctx);
     }
 
